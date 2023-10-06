@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const TaskController = require('./Controler')
+const Task = require('./Services')
 
 
 const port = 3030
@@ -23,5 +23,5 @@ const middlewares = [
     }
 ]
 app.get('/', middlewares);
-app.post('/', TaskController.novaTarefa);
+app.post('/', Task.criaNovaTarefa);
 
