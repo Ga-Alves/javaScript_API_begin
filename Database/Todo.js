@@ -12,10 +12,13 @@ const Todo = database.define('tasks', {
         type: Sequelize.STRING,
         allowNull: false,
     },
-
     descricao: {
         type: Sequelize.INTEGER,
     },
+    isCheck: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false,
+    }
 },
 {
     timestamps: false

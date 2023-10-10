@@ -11,7 +11,6 @@ const database = new Sequelize(
         dialect: 'mysql',
         logging: false
     }
-
 )
 
 async function VerifyConnection(){
